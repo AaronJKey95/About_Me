@@ -44,12 +44,6 @@ section {
     width: 100%;
     max-width: 800px;
 }
-#about {
-    display: flex;
-    align-items: flex-start; /* Align items at the start of the container */
-    gap: 20px; /* Add space between the image and text */
-}
-
 .about-content {
     display: flex;
     align-items: flex-start; /* Align items at the start of the container */
@@ -80,7 +74,6 @@ footer {
     border: 2px solid #ccc;
     border-radius: 15px;
     padding: 20px;
-    margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
@@ -178,7 +171,6 @@ footer {
 
 .timeline-date {
     font-weight: bold;
-    margin-bottom: 10px;
     display: block;
 }
 
@@ -202,7 +194,6 @@ footer {
 
 .academia-date {
     font-weight: bold;
-    margin-bottom: 10px;
     display: block;
 }
 /* Carousel Styles */
