@@ -45,3 +45,19 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.bcs-professional {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.bcs-professional h3 {
+    margin-top: 0;
+}
+
+.bcs-professional div {
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin: 1rem 0;
+}
