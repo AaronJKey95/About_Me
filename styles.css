@@ -68,15 +68,19 @@ footer {
     flex-wrap: wrap;
 }
 
-.hosting-org h3 {
-    width: 100%;
-    margin-top: 0;
-}
-
 .hosting-org a {
     text-decoration: none; /* Remove the underline */
     color: inherit; /* Inherit the color from the parent element */
     display: inline; /* Ensure the link does not expand vertically */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    width: auto; /* Set width to auto */
+}
+
+.hosting-org h3 {
+    display: inline; /* Ensure the h3 does not expand vertically */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
 .hosting-org a:hover h3 {
