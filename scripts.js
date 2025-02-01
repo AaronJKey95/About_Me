@@ -5,53 +5,31 @@ document.addEventListener("DOMContentLoaded", function() {
     const nextButton = document.querySelector('.carousel-button.next');
     const prevButton = document.querySelector('.carousel-button.prev');
 
-    // Set the width of each slide
-    const setSlideWidth = () => {
-        const slideWidth = track.clientWidth;
-        slides.forEach((slide) => {
-            slide.style.width = `${slideWidth}px`;
-        });
-    };
+    let currentIndex = 0;
 
-    // Arrange the slides next to one another
-    const setSlidePosition = () => {
+    const updateSlides = () => {
         const slideWidth = slides[0].getBoundingClientRect().width;
-        slides.forEach((slide, index) => {
-            slide.style.left = slideWidth * index + 'px';
-        });
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     };
 
-    // Move to target slide
-    const moveToSlide = (track, currentSlide, targetSlide) => {
-        const amountToMove = targetSlide.style.left;
-        track.style.transform = 'translateX(-' + amountToMove + ')';
-        currentSlide.classList.remove('current-slide');
-        targetSlide.classList.add('current-slide');
-    };
-
-    // Initialize slide widths and positions
-    setSlideWidth();
-    setSlidePosition();
-
-    nextButton.addEventListener('click', e => {
-        const currentSlide = track.querySelector('.current-slide');
-        const nextSlide = currentSlide.nextElementSibling;
-        if (nextSlide) {
-            moveToSlide(track, currentSlide, nextSlide);
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
         }
+        updateSlides();
     });
 
-    prevButton.addEventListener('click', e => {
-        const currentSlide = track.querySelector('.current-slide');
-        const prevSlide = currentSlide.previousElementSibling;
-        if (prevSlide) {
-            moveToSlide(track, currentSlide, prevSlide);
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = slides.length - 1;
         }
+        updateSlides();
     });
 
-    // Update slide widths and positions on window resize
-    window.addEventListener('resize', () => {
-        setSlideWidth();
-        setSlidePosition();
-    });
+    window.addEventListener('resize', updateSlides);
+    updateSlides();
 });
