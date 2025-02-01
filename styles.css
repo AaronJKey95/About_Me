@@ -55,7 +55,7 @@ footer {
     margin-top: auto; /* Push footer to the bottom */
 }
 
-.bcs-professional {
+.hosting-org {
     background-color: #fff;
     border: 2px solid #ccc;
     border-radius: 15px;
@@ -68,7 +68,7 @@ footer {
     flex-wrap: wrap;
 }
 
-.bcs-professional h3 {
+.hosting-org h3 {
     width: 100%;
     margin-top: 0;
 }
