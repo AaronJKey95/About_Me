@@ -98,7 +98,7 @@ footer {
     color: inherit; /* Inherit the color from the parent element */
 }
 
-.membership-container a:hover h3 {
+.membership-container a:hover h4 {
     text-decoration: underline; /* Add underline on hover */
     color: #007BFF; /* Change color on hover */
 }
