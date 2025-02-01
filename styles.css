@@ -183,7 +183,9 @@ footer {
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    will-change: transform;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 .carousel-slide {
