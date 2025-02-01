@@ -165,7 +165,6 @@ footer {
     margin-bottom: 10px;
     display: block;
 }
-
 /* Carousel Styles */
 .carousel {
     position: relative;
@@ -189,6 +188,7 @@ footer {
 .carousel-slide {
     min-width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .carousel-image {
