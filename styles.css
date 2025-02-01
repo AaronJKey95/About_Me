@@ -47,17 +47,27 @@ footer {
 }
 
 .bcs-professional {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-bottom: 2rem;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .bcs-professional h3 {
     margin-top: 0;
 }
 
-.bcs-professional div {
-    border: 1px solid #eee;
-    padding: 1rem;
-    margin: 1rem 0;
+.membership-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.membership-container h4 {
+    margin-top: 0;
 }
