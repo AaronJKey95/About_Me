@@ -74,7 +74,7 @@ footer {
     display: inline; /* Ensure the link does not expand vertically */
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
-    width: auto; /* Set width to auto */
+    width: 100%; /* Set width to auto */
 }
 
 .hosting-org h3 {
@@ -97,11 +97,6 @@ footer {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
     flex: 1;
     min-width: 200px;
-}
-.membership-container a {
-    text-decoration: none; /* Remove the underline */
-    color: inherit; /* Inherit the color from the parent element */
-    display: inline-block; /* Ensure the link does not expand vertically */
 }
 
 .membership-container a:hover h4 {
