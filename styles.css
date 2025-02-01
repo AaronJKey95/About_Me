@@ -108,23 +108,7 @@ footer {
     position: relative;
     background-color: inherit;
     width: 50%;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -30px;
-    background-color: white;
-    border: 4px solid #ddd;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.timeline-item:nth-child(odd)::before {
-    left: -30px;
+    box-sizing: border-box;
 }
 
 .timeline-item:nth-child(odd) {
@@ -135,25 +119,21 @@ footer {
     left: 50%;
 }
 
-.timeline-date {
-    position: absolute;
-    width: 100px;
-    left: -120px;
-    text-align: right;
-    font-weight: bold;
-    top: 15px;
-}
-
-.timeline-item:nth-child(even) .timeline-date {
-    left: auto;
-    right: -120px;
-    text-align: left;
-}
-
 .timeline-content {
     padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+}
+
+.timeline-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
 }
