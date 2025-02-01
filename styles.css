@@ -50,7 +50,7 @@ section {
 }
 
 .about-image {
-    width: 150px; /* Adjust the width of the image */
+    width: 400px; /* Adjust the width of the image */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: Add rounded corners to the image */
     margin-right: 20px; /* Add space between the image and text */
