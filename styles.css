@@ -165,7 +165,7 @@ footer {
     margin-bottom: 10px;
     display: block;
 }
-
+/* Carousel Styles */
 .carousel {
     position: relative;
     width: 100%;
@@ -183,9 +183,7 @@ footer {
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    will-change: transform;
 }
 
 .carousel-slide {
