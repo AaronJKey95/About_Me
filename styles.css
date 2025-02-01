@@ -76,7 +76,7 @@ footer {
 .hosting-org a {
     text-decoration: none; /* Remove the underline */
     color: inherit; /* Inherit the color from the parent element */
-    display: inline-block; /* Ensure the link does not expand vertically */
+    display: inline; /* Ensure the link does not expand vertically */
 }
 
 .hosting-org a:hover h3 {
